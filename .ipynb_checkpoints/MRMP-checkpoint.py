@@ -132,7 +132,7 @@ def train(train_loader, epoch, model, optimizer):
 
     for i, (images, labels, s_labels, indexes) in tqdm(
         enumerate(train_loader),
-        total=args.num_iter_per_epoch,
+        total=min(len(train_loader), args.num_iter_per_epoch),
         desc="Training",
         unit="batch",
     ):
