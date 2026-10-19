@@ -160,7 +160,20 @@ results/{dataset}/MRML/
 
 ## Citation
 
-*(To be added after publication.)*
+If you find this work useful, please cite:
+
+```bibtex
+@article{otsu2026mrmp,
+  author  = {Otsu, Mitsuyoshi and Zhou, Jun and Han, Bo and Pan, Shirui},
+  title   = {Multi-Round Meta-Learning for Label Purification Without Trusted Labels},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year    = {2026},
+  volume  = {48},
+  number  = {11},
+  pages   = {14910--14921},
+  doi     = {10.1109/TPAMI.2026.3718926}
+}
+```
 
 ---
 
