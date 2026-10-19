@@ -3,7 +3,7 @@
 Official PyTorch implementation of the paper:
 
 > **Multi-Round Meta-Learning for Label Purification Without Trusted Labels**  
-> *(Under review at TPAMI, 2026)*
+> *(Published in TPAMI, 2026)*
 
 MRMP is a PyTorch implementation of a clean-label-free meta-learning framework for label purification under noisy supervision. The framework iteratively purifies label quality over multiple rounds by alternating between **base-model training** and **meta-purification** — without requiring any clean reference labels.
 
