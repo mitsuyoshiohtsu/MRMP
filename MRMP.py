@@ -257,8 +257,8 @@ def meta_train(train_loader, meta_loader, max_iter, model1, optimizer, model2, n
             logits      = model1(images)
             next_labels = nd(c_labels, labels)
             loss        = F.cross_entropy(logits, next_labels)
-            ((sign * loss) / (2 * epsilon)).backward()
-            meta_loss = meta_loss + (sign * loss).detach() / (2 * epsilon)
+            ((-sign * loss) / (2 * epsilon)).backward()
+            meta_loss = meta_loss + (-sign * loss).detach() / (2 * epsilon)
 
             with torch.no_grad():
                 for p, v_p in zip(model1.parameters(), v):
